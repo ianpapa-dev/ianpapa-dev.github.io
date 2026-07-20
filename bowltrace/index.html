@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BowlTrace</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      "Apple SD Gothic Neo", "Malgun Gothic", "Hiragino Sans", sans-serif;
+    line-height: 1.7; margin: 0; padding: 0;
+    color: #1a1a1a; background: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e6e6e6; background: #121212; }
+    a { color: #6ba8ff; }
+    .meta { color: #9a9a9a; }
+    h1, h2 { border-color: #2a2a2a; }
+    .lang button { border-color: #2a2a2a; color: #bbb; }
+    .lang button.on { background: #1e4dd8; color: #fff; border-color: #1e4dd8; }
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 24px 20px 64px; }
+  .lang { display: flex; gap: 8px; justify-content: flex-end; margin-bottom: 8px; }
+  .lang button {
+    font: inherit; font-size: 0.85rem; padding: 5px 12px; cursor: pointer;
+    border: 1px solid #ddd; border-radius: 999px; background: transparent;
+    color: #666;
+  }
+  .lang button.on { background: #1e4dd8; color: #fff; border-color: #1e4dd8; }
+  h1 { font-size: 1.7rem; padding-bottom: 12px; border-bottom: 2px solid #eee; }
+  h2 { font-size: 1.2rem; margin-top: 2em; padding-bottom: 6px;
+       border-bottom: 1px solid #eee; }
+  .meta { color: #666; font-size: 0.9rem; margin-bottom: 2em; }
+  .q { font-weight: 700; margin-top: 1.4em; }
+  .a { margin-top: 0.3em; }
+  a { color: #1e4dd8; }
+  ul { padding-left: 1.2em; }
+  li { margin: 0.3em 0; }
+  [data-lang] { display: none; }
+  [data-lang].on { display: block; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="lang">
+    <button data-set="ko" class="on" onclick="setLang('ko')">한국어</button>
+    <button data-set="en" onclick="setLang('en')">English</button>
+    <button data-set="ja" onclick="setLang('ja')">日本語</button>
+  </div>
+
+  <!-- 한국어 -->
+  <div data-lang="ko" class="on">
+    <h1>BowlTrace 지원</h1>
+    <p class="meta">볼링 궤적·구속·회전수 분석 앱</p>
+    <p>BowlTrace를 이용해 주셔서 감사합니다. 아래 안내와 자주 묻는 질문을
+    확인하시고, 해결되지 않는 문제는 이메일로 문의해 주세요.</p>
+    <h2>문의</h2>
+    <p>이메일: <a href="mailto:ianpapa.support@gmail.com">ianpapa.support@gmail.com</a><br>
+    문의 시 사용 기기 모델과 iOS/Android 버전, 문제 상황을 함께 적어
+    주시면 더 빠르게 도와드릴 수 있습니다.</p>
+    <h2>촬영 팁</h2>
+    <ul>
+      <li>삼각대 등으로 카메라를 고정하세요.</li>
+      <li>레인 전체(파울라인~핀덱)가 화면에 들어오게 촬영하세요.</li>
+      <li>회전수(RPM) 정확도를 위해 60fps로 촬영하세요.</li>
+      <li>공과 레인의 색 대비가 뚜렷할수록 인식이 잘 됩니다.</li>
+    </ul>
+    <h2>자주 묻는 질문</h2>
+    <p class="q">Q. 레인이 자동으로 인식되지 않아요.</p>
+    <p class="a">단일 레인이 파울라인까지 화면에 들어오도록 촬영하면 인식률이
+    높습니다. 자동 인식이 실패하면 화면에서 네 모서리를 직접 맞출 수
+    있습니다.</p>
+    <p class="q">Q. 레인 패턴 시트가 인식되지 않아요.</p>
+    <p class="a">자동 인식은 현재 Kegel 표준 패턴 시트를 지원합니다. 인식되지
+    않은 값은 패턴 등록 화면에서 직접 입력할 수 있습니다.</p>
+    <p class="q">Q. 회전수(RPM)가 정확하지 않은 것 같아요.</p>
+    <p class="a">RPM은 촬영 프레임레이트에 크게 좌우됩니다. 60fps로 촬영하면
+    정확도가 올라갑니다. 현재 RPM 지표는 베타로 제공됩니다.</p>
+    <p class="q">Q. 분석한 영상은 어디에 저장되나요?</p>
+    <p class="a">모든 영상과 분석 데이터는 사용자 기기에만 저장되며 외부로
+    전송되지 않습니다. 설정에서 영상 보관 기간을 조정할 수 있습니다.</p>
+    <p class="q">Q. 광고를 없앨 수 있나요?</p>
+    <p class="a">현재 BowlTrace는 광고 기반 무료 앱입니다. 추적을 거부하면
+    맞춤형 대신 일반 광고가 표시됩니다.</p>
+    <h2>개인정보처리방침</h2>
+    <p><a href="privacy.html">개인정보처리방침 보기</a></p>
+  </div>
+
+  <!-- English -->
+  <div data-lang="en">
+    <h1>BowlTrace Support</h1>
+    <p class="meta">Bowling trajectory, speed &amp; rev-rate analysis app</p>
+    <p>Thank you for using BowlTrace. Please check the tips and FAQ below,
+    and email us if your issue isn't resolved.</p>
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:ianpapa.support@gmail.com">ianpapa.support@gmail.com</a><br>
+    Including your device model, iOS/Android version, and a description of
+    the issue helps us assist you faster.</p>
+    <h2>Recording tips</h2>
+    <ul>
+      <li>Keep the camera fixed, e.g. on a tripod.</li>
+      <li>Frame the whole lane (foul line to pin deck).</li>
+      <li>Record at 60fps for accurate rev rate (RPM).</li>
+      <li>Strong color contrast between ball and lane helps detection.</li>
+    </ul>
+    <h2>FAQ</h2>
+    <p class="q">Q. The lane isn't detected automatically.</p>
+    <p class="a">Detection works best when a single lane, including the foul
+    line, fills the frame. If auto-detection fails, you can adjust the four
+    corners manually on screen.</p>
+    <p class="q">Q. The lane pattern sheet isn't recognized.</p>
+    <p class="a">Auto-recognition currently supports Kegel standard pattern
+    sheets. Any unrecognized values can be entered manually on the pattern
+    registration screen.</p>
+    <p class="q">Q. The rev rate (RPM) seems inaccurate.</p>
+    <p class="a">RPM depends heavily on the recording frame rate. Recording at
+    60fps improves accuracy. The RPM metric is currently in beta.</p>
+    <p class="q">Q. Where are my analyzed videos stored?</p>
+    <p class="a">All videos and analysis data are stored only on your device
+    and are never uploaded. You can adjust the retention period in Settings.</p>
+    <p class="q">Q. Can I remove ads?</p>
+    <p class="a">BowlTrace is currently a free, ad-supported app. If you decline
+    tracking, you'll see non-personalized ads instead of personalized ones.</p>
+    <h2>Privacy Policy</h2>
+    <p><a href="privacy.html">View Privacy Policy</a></p>
+  </div>
+
+  <!-- 日本語 -->
+  <div data-lang="ja">
+    <h1>BowlTrace サポート</h1>
+    <p class="meta">ボウリングの軌道・球速・回転数を分析するアプリ</p>
+    <p>BowlTraceをご利用いただきありがとうございます。以下のヒントとよくある
+    質問をご確認いただき、解決しない場合はメールでお問い合わせください。</p>
+    <h2>お問い合わせ</h2>
+    <p>メール: <a href="mailto:ianpapa.support@gmail.com">ianpapa.support@gmail.com</a><br>
+    ご利用の端末モデル、iOS/Androidのバージョン、問題の状況を併せてお知らせ
+    いただくと、より早く対応できます。</p>
+    <h2>撮影のヒント</h2>
+    <ul>
+      <li>三脚などでカメラを固定してください。</li>
+      <li>レーン全体（ファウルライン〜ピンデッキ）が画面に入るように撮影してください。</li>
+      <li>回転数（RPM）の精度のため60fpsで撮影してください。</li>
+      <li>ボールとレーンの色のコントラストが明確なほど認識しやすくなります。</li>
+    </ul>
+    <h2>よくある質問</h2>
+    <p class="q">Q. レーンが自動で認識されません。</p>
+    <p class="a">単一のレーンがファウルラインまで画面に収まるように撮影すると
+    認識率が上がります。自動認識に失敗した場合は、画面上で四隅を手動で
+    調整できます。</p>
+    <p class="q">Q. レーンパターン表が認識されません。</p>
+    <p class="a">自動認識は現在Kegel標準パターン表に対応しています。認識され
+    なかった値はパターン登録画面で直接入力できます。</p>
+    <p class="q">Q. 回転数（RPM）が正確でないようです。</p>
+    <p class="a">RPMは撮影のフレームレートに大きく左右されます。60fpsで撮影
+    すると精度が上がります。現在RPM指標はベータ版として提供しています。</p>
+    <p class="q">Q. 分析した動画はどこに保存されますか？</p>
+    <p class="a">すべての動画と分析データは端末内にのみ保存され、外部に送信
+    されません。設定で動画の保存期間を調整できます。</p>
+    <p class="q">Q. 広告を消せますか？</p>
+    <p class="a">現在BowlTraceは広告付きの無料アプリです。トラッキングを拒否
+    すると、パーソナライズ広告の代わりに一般広告が表示されます。</p>
+    <h2>プライバシーポリシー</h2>
+    <p><a href="privacy.html">プライバシーポリシーを見る</a></p>
+  </div>
+</div>
+
+<script>
+  function setLang(l) {
+    document.documentElement.lang = l;
+    document.querySelectorAll('[data-lang]').forEach(function (el) {
+      el.classList.toggle('on', el.getAttribute('data-lang') === l);
+    });
+    document.querySelectorAll('.lang button').forEach(function (b) {
+      b.classList.toggle('on', b.getAttribute('data-set') === l);
+    });
+    try { localStorage.setItem('bt_lang', l); } catch (e) {}
+  }
+  (function () {
+    var saved;
+    try { saved = localStorage.getItem('bt_lang'); } catch (e) {}
+    var nav = (navigator.language || 'ko').slice(0, 2);
+    var l = saved || (['ko', 'en', 'ja'].indexOf(nav) >= 0 ? nav : 'ko');
+    setLang(l);
+  })();
+</script>
+</body>
+</html>

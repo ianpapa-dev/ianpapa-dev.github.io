@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BowlTrace Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      "Apple SD Gothic Neo", "Malgun Gothic", "Hiragino Sans", sans-serif;
+    line-height: 1.7; margin: 0; padding: 0;
+    color: #1a1a1a; background: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e6e6e6; background: #121212; }
+    a { color: #6ba8ff; }
+    .meta { color: #9a9a9a; }
+    h1, h2 { border-color: #2a2a2a; }
+    table, th, td { border-color: #2a2a2a; }
+    th { background: #1c1c1c; }
+    .lang button { border-color: #2a2a2a; color: #bbb; }
+    .lang button.on { background: #1e4dd8; color: #fff; border-color: #1e4dd8; }
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 24px 20px 64px; }
+  .lang { display: flex; gap: 8px; justify-content: flex-end; margin-bottom: 8px; }
+  .lang button {
+    font: inherit; font-size: 0.85rem; padding: 5px 12px; cursor: pointer;
+    border: 1px solid #ddd; border-radius: 999px; background: transparent;
+    color: #666;
+  }
+  .lang button.on { background: #1e4dd8; color: #fff; border-color: #1e4dd8; }
+  h1 { font-size: 1.7rem; padding-bottom: 12px; border-bottom: 2px solid #eee; }
+  h2 { font-size: 1.2rem; margin-top: 2em; padding-bottom: 6px;
+       border-bottom: 1px solid #eee; }
+  .meta { color: #666; font-size: 0.9rem; margin-bottom: 2em; }
+  ul { padding-left: 1.2em; }
+  li { margin: 0.3em 0; }
+  a { color: #1e4dd8; }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0;
+          font-size: 0.92rem; }
+  th, td { border: 1px solid #ddd; padding: 8px 10px; text-align: left;
+           vertical-align: top; }
+  th { background: #f5f5f5; }
+  [data-lang] { display: none; }
+  [data-lang].on { display: block; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="lang">
+    <button data-set="ko" class="on" onclick="setLang('ko')">한국어</button>
+    <button data-set="en" onclick="setLang('en')">English</button>
+    <button data-set="ja" onclick="setLang('ja')">日本語</button>
+  </div>
+
+  <!-- 한국어 -->
+  <div data-lang="ko" class="on">
+    <h1>개인정보처리방침</h1>
+    <p class="meta">BowlTrace · 시행일: 2026년 7월 20일</p>
+    <p>IanPapa(이하 "개발자")는 BowlTrace(이하 "앱")를 이용하는 사용자의
+    개인정보를 중요하게 생각하며, 관련 법령을 준수합니다. 본 방침은 앱이
+    어떤 정보를 어떻게 처리하는지 설명합니다.</p>
+    <h2>1. 기기에만 저장되는 정보</h2>
+    <p>앱의 핵심 데이터는 사용자의 기기에만 저장되며, 개발자의 서버로
+    전송되지 않습니다.</p>
+    <ul>
+      <li>촬영·선택한 볼링 영상 및 추출 프레임</li>
+      <li>분석 결과(궤적·구속·회전수 등 지표)</li>
+      <li>등록한 마이볼 정보, 레인 패턴 정보 및 시트 사진</li>
+      <li>앱 설정(테마·언어·보관 기간 등)</li>
+    </ul>
+    <p>이 정보는 앱을 삭제하면 함께 삭제됩니다. 문자 인식(OCR)은 기기
+    내에서 처리되며 사진은 외부로 전송되지 않습니다.</p>
+    <h2>2. 기기 권한</h2>
+    <table>
+      <tr><th>권한</th><th>사용 목적</th></tr>
+      <tr><td>카메라</td><td>볼링 영상 촬영</td></tr>
+      <tr><td>사진 보관함</td><td>분석할 영상·레인 시트 사진 선택</td></tr>
+      <tr><td>추적(App Tracking Transparency, iOS)</td>
+          <td>맞춤형 광고 제공을 위한 광고 식별자 사용 (동의 시에만)</td></tr>
+    </table>
+    <p>모든 권한은 해당 기능을 사용할 때 요청되며, 거부할 수 있습니다.
+    추적을 거부하면 비맞춤형(일반) 광고가 제공됩니다.</p>
+    <h2>3. 제3자 서비스로 수집·전송되는 정보</h2>
+    <p>앱은 서비스 운영과 무료 제공을 위해 아래 제3자 서비스를 사용하며,
+    각 서비스는 자체 개인정보처리방침에 따라 정보를 처리합니다.</p>
+    <table>
+      <tr><th>서비스</th><th>수집 정보</th><th>목적</th></tr>
+      <tr><td>Google Firebase Analytics</td>
+          <td>앱 사용 이벤트, 기기·앱 버전 정보</td>
+          <td>사용 통계 및 기능 개선</td></tr>
+      <tr><td>Google Firebase Crashlytics</td>
+          <td>비정상 종료(크래시) 진단 정보, 기기 상태</td>
+          <td>오류 진단 및 안정성 개선</td></tr>
+      <tr><td>Google AdMob</td>
+          <td>광고 식별자, IP, 기기·앱 정보</td>
+          <td>광고 게재 및 측정</td></tr>
+    </table>
+    <p><strong>볼링 영상과 분석 데이터는 위 광고·분석 서비스에 절대
+    전달되지 않습니다.</strong></p>
+    <ul>
+      <li>Google 개인정보처리방침:
+        <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+      <li>AdMob 파트너 목록:
+        <a href="https://support.google.com/admob/answer/9012903">support.google.com/admob/answer/9012903</a></li>
+    </ul>
+    <h2>4. 광고 및 동의</h2>
+    <p>앱은 Google의 사용자 메시징 플랫폼(UMP)을 통해 지역 법령에 따라
+    광고 동의를 요청합니다. 사용자는 언제든 기기 설정(iOS: 설정 &gt;
+    개인정보 보호 및 보안 &gt; 추적)에서 추적 허용 여부를 변경할 수
+    있습니다.</p>
+    <h2>5. 아동의 개인정보</h2>
+    <p>앱은 만 14세 미만 아동을 주 대상으로 하지 않으며, 아동의 개인정보를
+    고의로 수집하지 않습니다.</p>
+    <h2>6. 정보의 보관 및 삭제</h2>
+    <p>기기 내 데이터는 사용자가 앱에서 직접 삭제하거나 앱을 제거하면
+    삭제됩니다. 제3자 서비스가 처리한 정보의 보관·삭제는 각 서비스의
+    정책을 따릅니다.</p>
+    <h2>7. 방침 변경</h2>
+    <p>본 방침은 법령·서비스 변경에 따라 개정될 수 있으며, 개정 시 본
+    페이지를 통해 공지합니다.</p>
+    <h2>8. 문의</h2>
+    <p>개인정보 처리에 관한 문의:
+    <a href="mailto:ianpapa.support@gmail.com">ianpapa.support@gmail.com</a></p>
+  </div>
+
+  <!-- English -->
+  <div data-lang="en">
+    <h1>Privacy Policy</h1>
+    <p class="meta">BowlTrace · Effective date: July 20, 2026</p>
+    <p>IanPapa (the "Developer") values the privacy of users of BowlTrace
+    (the "App") and complies with applicable laws. This policy explains what
+    information the App handles and how.</p>
+    <h2>1. Information stored only on your device</h2>
+    <p>The App's core data is stored only on your device and is not
+    transmitted to the Developer's servers.</p>
+    <ul>
+      <li>Recorded/selected bowling videos and extracted frames</li>
+      <li>Analysis results (trajectory, speed, rev rate, and other metrics)</li>
+      <li>Registered ball info, lane pattern info, and sheet photos</li>
+      <li>App settings (theme, language, retention period, etc.)</li>
+    </ul>
+    <p>This data is deleted when you delete the App. Text recognition (OCR)
+    is processed on-device and photos are not sent externally.</p>
+    <h2>2. Device permissions</h2>
+    <table>
+      <tr><th>Permission</th><th>Purpose</th></tr>
+      <tr><td>Camera</td><td>Recording bowling videos</td></tr>
+      <tr><td>Photo Library</td><td>Selecting videos and lane sheet photos to analyze</td></tr>
+      <tr><td>Tracking (App Tracking Transparency, iOS)</td>
+          <td>Using the advertising identifier for personalized ads (only with consent)</td></tr>
+    </table>
+    <p>All permissions are requested when the relevant feature is used and
+    can be declined. If you decline tracking, non-personalized ads are shown.</p>
+    <h2>3. Information collected by third-party services</h2>
+    <p>To operate the service and offer it for free, the App uses the
+    third-party services below, each of which processes data under its own
+    privacy policy.</p>
+    <table>
+      <tr><th>Service</th><th>Data collected</th><th>Purpose</th></tr>
+      <tr><td>Google Firebase Analytics</td>
+          <td>App usage events, device/app version info</td>
+          <td>Usage statistics and feature improvement</td></tr>
+      <tr><td>Google Firebase Crashlytics</td>
+          <td>Crash diagnostics, device state</td>
+          <td>Error diagnosis and stability improvement</td></tr>
+      <tr><td>Google AdMob</td>
+          <td>Advertising identifier, IP, device/app info</td>
+          <td>Ad serving and measurement</td></tr>
+    </table>
+    <p><strong>Bowling videos and analysis data are never shared with the
+    advertising or analytics services above.</strong></p>
+    <ul>
+      <li>Google Privacy Policy:
+        <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+      <li>AdMob partners:
+        <a href="https://support.google.com/admob/answer/9012903">support.google.com/admob/answer/9012903</a></li>
+    </ul>
+    <h2>4. Advertising and consent</h2>
+    <p>The App requests advertising consent in accordance with regional laws
+    via Google's User Messaging Platform (UMP). You can change tracking
+    permission at any time in device settings (iOS: Settings &gt; Privacy &amp;
+    Security &gt; Tracking).</p>
+    <h2>5. Children's privacy</h2>
+    <p>The App is not primarily directed at children under 14 and does not
+    knowingly collect personal information from children.</p>
+    <h2>6. Retention and deletion</h2>
+    <p>On-device data is deleted when you remove it in the App or uninstall
+    the App. Retention/deletion of data processed by third-party services
+    follows each service's policy.</p>
+    <h2>7. Changes to this policy</h2>
+    <p>This policy may be revised due to changes in law or the service, and
+    revisions will be announced on this page.</p>
+    <h2>8. Contact</h2>
+    <p>Inquiries about privacy:
+    <a href="mailto:ianpapa.support@gmail.com">ianpapa.support@gmail.com</a></p>
+  </div>
+
+  <!-- 日本語 -->
+  <div data-lang="ja">
+    <h1>プライバシーポリシー</h1>
+    <p class="meta">BowlTrace · 施行日: 2026年7月20日</p>
+    <p>IanPapa（以下「開発者」）は、BowlTrace（以下「アプリ」）を利用する
+    ユーザーのプライバシーを重視し、関連法令を遵守します。本ポリシーは、
+    アプリがどのような情報をどのように取り扱うかを説明します。</p>
+    <h2>1. 端末内にのみ保存される情報</h2>
+    <p>アプリの主要データはユーザーの端末内にのみ保存され、開発者のサーバー
+    には送信されません。</p>
+    <ul>
+      <li>撮影・選択したボウリング動画および抽出フレーム</li>
+      <li>分析結果（軌道・球速・回転数などの指標）</li>
+      <li>登録したマイボール情報、レーンパターン情報およびシート写真</li>
+      <li>アプリ設定（テーマ・言語・保存期間など）</li>
+    </ul>
+    <p>これらの情報はアプリを削除すると共に削除されます。文字認識（OCR）は
+    端末内で処理され、写真が外部に送信されることはありません。</p>
+    <h2>2. 端末の権限</h2>
+    <table>
+      <tr><th>権限</th><th>利用目的</th></tr>
+      <tr><td>カメラ</td><td>ボウリング動画の撮影</td></tr>
+      <tr><td>写真ライブラリ</td><td>分析する動画・レーンシート写真の選択</td></tr>
+      <tr><td>トラッキング（App Tracking Transparency, iOS）</td>
+          <td>パーソナライズ広告のための広告識別子の利用（同意時のみ）</td></tr>
+    </table>
+    <p>すべての権限は該当機能の利用時に要求され、拒否できます。トラッキング
+    を拒否した場合は、非パーソナライズ（一般）広告が表示されます。</p>
+    <h2>3. 第三者サービスが収集・送信する情報</h2>
+    <p>アプリはサービスの運営と無料提供のため、以下の第三者サービスを利用
+    しており、各サービスは自身のプライバシーポリシーに従って情報を取り扱い
+    ます。</p>
+    <table>
+      <tr><th>サービス</th><th>収集情報</th><th>目的</th></tr>
+      <tr><td>Google Firebase Analytics</td>
+          <td>アプリ利用イベント、端末・アプリバージョン情報</td>
+          <td>利用統計および機能改善</td></tr>
+      <tr><td>Google Firebase Crashlytics</td>
+          <td>クラッシュ診断情報、端末状態</td>
+          <td>エラー診断および安定性の改善</td></tr>
+      <tr><td>Google AdMob</td>
+          <td>広告識別子、IP、端末・アプリ情報</td>
+          <td>広告配信および測定</td></tr>
+    </table>
+    <p><strong>ボウリング動画と分析データが、上記の広告・分析サービスに
+    共有されることは一切ありません。</strong></p>
+    <ul>
+      <li>Google プライバシーポリシー:
+        <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+      <li>AdMob パートナー一覧:
+        <a href="https://support.google.com/admob/answer/9012903">support.google.com/admob/answer/9012903</a></li>
+    </ul>
+    <h2>4. 広告と同意</h2>
+    <p>アプリは Google のユーザーメッセージングプラットフォーム（UMP）を
+    通じて、地域の法令に従い広告の同意を求めます。ユーザーはいつでも端末の
+    設定（iOS: 設定 &gt; プライバシーとセキュリティ &gt; トラッキング）で
+    トラッキングの許可を変更できます。</p>
+    <h2>5. 子どものプライバシー</h2>
+    <p>アプリは14歳未満の子どもを主な対象とせず、子どもの個人情報を故意に
+    収集しません。</p>
+    <h2>6. 情報の保存および削除</h2>
+    <p>端末内のデータは、ユーザーがアプリ内で削除するか、アプリを削除すると
+    削除されます。第三者サービスが処理した情報の保存・削除は、各サービスの
+    ポリシーに従います。</p>
+    <h2>7. ポリシーの変更</h2>
+    <p>本ポリシーは法令・サービスの変更に応じて改定される場合があり、改定時
+    は本ページで告知します。</p>
+    <h2>8. お問い合わせ</h2>
+    <p>プライバシーに関するお問い合わせ:
+    <a href="mailto:ianpapa.support@gmail.com">ianpapa.support@gmail.com</a></p>
+  </div>
+</div>
+
+<script>
+  function setLang(l) {
+    document.documentElement.lang = l;
+    document.querySelectorAll('[data-lang]').forEach(function (el) {
+      el.classList.toggle('on', el.getAttribute('data-lang') === l);
+    });
+    document.querySelectorAll('.lang button').forEach(function (b) {
+      b.classList.toggle('on', b.getAttribute('data-set') === l);
+    });
+    try { localStorage.setItem('bt_lang', l); } catch (e) {}
+  }
+  (function () {
+    var saved;
+    try { saved = localStorage.getItem('bt_lang'); } catch (e) {}
+    var nav = (navigator.language || 'ko').slice(0, 2);
+    var l = saved || (['ko', 'en', 'ja'].indexOf(nav) >= 0 ? nav : 'ko');
+    setLang(l);
+  })();
+</script>
+</body>
+</html>
