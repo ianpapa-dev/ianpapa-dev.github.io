@@ -280,14 +280,10 @@
     document.querySelectorAll('.lang button').forEach(function (b) {
       b.classList.toggle('on', b.getAttribute('data-set') === l);
     });
-    try { localStorage.setItem('bt_lang', l); } catch (e) {}
   }
   (function () {
-    var saved;
-    try { saved = localStorage.getItem('bt_lang'); } catch (e) {}
-    var nav = (navigator.language || 'ko').slice(0, 2);
-    var l = saved || (['ko', 'en', 'ja'].indexOf(nav) >= 0 ? nav : 'ko');
-    setLang(l);
+    var param = new URLSearchParams(location.search).get('lang');
+    setLang(['ko', 'en', 'ja'].indexOf(param) >= 0 ? param : 'ko');
   })();
 </script>
 </body>
